@@ -11,6 +11,6 @@ with open("title.txt", "r", encoding='utf-8') as f:
 		purge_ret = purge(token, api_url, line)
 		result.append(purge_ret)
 		
-with open("result.txt", "w", encoding='utf-8') as f1:
+with open("result.json", "w", encoding='utf-8') as f1:
 	result = json.dumps(result, indent=4, ensure_ascii=False)
 	f1.write(result)
